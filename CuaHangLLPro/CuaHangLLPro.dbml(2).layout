@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CuaHangLLPro">
+  <DataContextMoniker Name="/CuaHangLLProDataContext" />
+  <nestedChildShapes>
+    <classShape Id="426510e7-e403-46bd-9833-1477b4c846bf" absoluteBounds="6.375, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/CuaHangLLProDataContext/tblChiTietHoaDon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16fba6b8-5ed2-4289-b805-22bd2a8791ca" absoluteBounds="6.39, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0f80e38b-a8e5-4129-9119-abda80cd685e" absoluteBounds="0.625, 4.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CuaHangLLProDataContext/tblHoaDon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8132a1c-eaec-4c56-8156-ff2608d019b9" absoluteBounds="0.64000000000000012, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.63472987647506 : 4.75); (1.63472987647506 : 4.12625); (1.94791666666667 : 3.875); (4.14280337341907 : 3.875 : JumpStart); (4.30947004008573 : 3.875 : JumpEnd); (7.375 : 3.875); (7.375 : 2.5112939453125)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CuaHangLLProDataContext/tblHoaDon/tblHoaDon_tblChiTietHoaDon" />
+      <nodes>
+        <classShapeMoniker Id="0f80e38b-a8e5-4129-9119-abda80cd685e" />
+        <classShapeMoniker Id="426510e7-e403-46bd-9833-1477b4c846bf" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d0d34cf9-fca3-4481-9fde-de41f514c718" absoluteBounds="3.25, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CuaHangLLProDataContext/tblKhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dfc0a281-4590-4456-8493-bb8fb043f20f" absoluteBounds="3.265, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.2261367067524 : 2.07859537760417); (4.2261367067524 : 5.8568130061849); (2.625 : 5.8568130061849)]" fixedFrom="Caller" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CuaHangLLProDataContext/tblKhachHang/tblKhachHang_tblHoaDon" />
+      <nodes>
+        <classShapeMoniker Id="d0d34cf9-fca3-4481-9fde-de41f514c718" />
+        <classShapeMoniker Id="0f80e38b-a8e5-4129-9119-abda80cd685e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7e77416f-eaff-4562-a264-45cedcf1587b" absoluteBounds="6.375, 4.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CuaHangLLProDataContext/tblNhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d432f8b-f2c2-4641-ba4a-adb52e972ad8" absoluteBounds="6.3900000000000006, 4.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.375 : 5.13022420247396); (4.30947004008573 : 5.13022420247396 : JumpStart); (4.14280337341907 : 5.13022420247396 : JumpEnd); (2.625 : 5.13022420247396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CuaHangLLProDataContext/tblNhanVien/tblNhanVien_tblHoaDon" />
+      <nodes>
+        <classShapeMoniker Id="7e77416f-eaff-4562-a264-45cedcf1587b" />
+        <classShapeMoniker Id="0f80e38b-a8e5-4129-9119-abda80cd685e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6afeebd7-7628-4b10-a9c4-17c87dc407e1" absoluteBounds="0.5, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/CuaHangLLProDataContext/tblSach" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6dc800cd-2e59-42b2-8baf-7e5d5371fbe0" absoluteBounds="0.515, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.32619466145833); (4.14280337341907 : 2.32619466145833 : JumpStart); (4.30947004008573 : 2.32619466145833 : JumpEnd); (6.375 : 2.32619466145833)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CuaHangLLProDataContext/tblSach/tblSach_tblChiTietHoaDon" />
+      <nodes>
+        <classShapeMoniker Id="6afeebd7-7628-4b10-a9c4-17c87dc407e1" />
+        <classShapeMoniker Id="426510e7-e403-46bd-9833-1477b4c846bf" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="323b6ea8-883c-4687-aeee-d9cd99fe66dd" absoluteBounds="3.5, 6.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/CuaHangLLProDataContext/tblTaiKhoan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1dd25ce-2c89-4542-aa66-5d5d986f6a1d" absoluteBounds="3.5149999999999997, 7.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.375 : 6.1194482421875); (4.90625 : 6.1194482421875); (4.90625 : 6.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CuaHangLLProDataContext/tblNhanVien/tblNhanVien_tblTaiKhoan" />
+      <nodes>
+        <classShapeMoniker Id="7e77416f-eaff-4562-a264-45cedcf1587b" />
+        <classShapeMoniker Id="323b6ea8-883c-4687-aeee-d9cd99fe66dd" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
